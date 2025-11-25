@@ -21,6 +21,7 @@ class LinodeApi():
             'region': region,
             "root_pass": password,
             "backups_enabled": False,
+            "disk_encryption": "disabled",
         }
         if not self.report_post(url, data):
             return False
